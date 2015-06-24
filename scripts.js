@@ -1,2 +1,3 @@
 var app = angular.module('Todo', []);
-    <body ng-app="Todo">
+app.controller('TodoCtrl', function($scope) {
+});  
