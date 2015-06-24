@@ -43,8 +43,8 @@ I am going help you with being able to talk to young or older campers, and other
 	<span> {{ message }} </span>
 	<h2>Todo</h2>
 
-      <ul class="todo-list" ng-repeat="todo in todos track by $index">
-        <li>
+      <ul class="todo-list">
+        <li ng-repeat="todo in todos track by $index">
           <span>{{ todo }}</span>
           <button class="bt bt-achieve" ng-click="done(todo)">Done</button>
         </li>
