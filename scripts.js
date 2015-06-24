@@ -12,4 +12,5 @@ app.controller('TodoCtrl', function($scope) {
     if (indexOf !== -1) {
       $scope.todos.splice(indexOf, 1);
     }
+  };  
 });  
