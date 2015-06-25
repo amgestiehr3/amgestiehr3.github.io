@@ -2,9 +2,7 @@ CACHE MANIFEST
 # Version 1
 
 CACHE:
-script/scriptfilename1.js
-css/cssfilename.css
-/.png
+https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUbVvHChUOUb6mbdWZK244hGrblPDyvIbU2wA8KDjetlTD5c7frg
 
 FALLBACK:
 # This will enable imagename4.png to be as a replacement for 
