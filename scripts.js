@@ -20,4 +20,4 @@ app.controller('TodoCtrl', function($scope) {
       $scope.newTodo = '';
     }
     };
-});  
+}); 
