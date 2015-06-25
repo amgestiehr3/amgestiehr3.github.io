@@ -14,7 +14,7 @@ var app = angular.module('Todo', []);
 app.controller('TodoCtrl', function($scope) {
 	$scope.message = 'Hi everyone i am happy.';
 	
-	var todosStorage=localstorage.getItem("todos");
+	var todosStorage=localStorage.getItem("todos");
 	
 	if(todosStorage!=null){
 	$scope.todos=todosStorage;
