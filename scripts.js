@@ -1,3 +1,15 @@
+var hasStorage;
+// Check browser support
+if (typeof(Storage) != "undefined") {
+	hasStorage=true;
+    
+    // Retrieve
+   //document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+} else {
+	hasStorage=false;
+    
+}
+
 var app = angular.module('Todo', []);
 app.controller('TodoCtrl', function($scope) {
 	$scope.message = 'Hi everyone i am happy.';
@@ -12,12 +24,22 @@ app.controller('TodoCtrl', function($scope) {
     var indexOf = $scope.todos.indexOf(todo);
     if (indexOf !== -1) {
       $scope.todos.splice(indexOf, 1);
+      if(hasStorage){
+   // Store
+    localStorage.setItem("todos",JSON.stringify($scope.todos));
+    } 
     }
-    };  
+
+};  
+
     $scope.add = function(e) {
     if (e.which && e.which === 13) {
       $scope.todos.push($scope.newTodo);
       $scope.newTodo = '';
+      if(hasStorage){
+   // Store
+    localStorage.setItem("todos",JSON.stringify($scope.todos));
+    } 
     }
     };
 }); 
