@@ -3,15 +3,6 @@ body{
 	overflow-x:hidden;
 	}
 
-	
-article.tabs
-{
-	position: relative;
-	display: row;
-	width: 5em;
-	height: 5em;
-	margin: 2em auto;
-}
 
 img{
 	max-width:100%;
