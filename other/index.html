@@ -26,7 +26,7 @@
 <link rel="manifest" href="manifest.json">
 <link rel="icon" sizes="192x192" href="nice-highres.png">
 
-<title>Camp Counselor Advice</title>
+<title>Camp Counselor Advice | Other</title>
 
 
 </article>
@@ -43,44 +43,12 @@
 <h1> Camp Counselor Advice </h1>
 
 <ul class="nav nav-tabs">
-  <li role="presentation" class="active"><a href="/index.html">Home</a></li>
+  <li role="presentation"><a href="/index.html">Home</a></li>
   <li role="presentation"><a href="/dos-and-donts">Do's and Don'ts</a></li>
-  <li role="presentation"><a href="/other">Other</a></li>
+  <li role="presentation" class="active"><a href="/other">Other</a></li>
 </ul>
 
-<p class="lead red"> 
-
-<p> This website is for new camp counselors or CIT. 
-I am a CIT and have been doing this for the pass two years. 
-I am going help you with being able to talk to young or older campers, and other stuff. </p>
- 
-<div class="page-container" ng-controller="TodoCtrl">
-   <input type="text" ng-model="message" />
-	<span> {{ message }} </span>
-	<h2>Todo</h2>
-
-      <ul class="todo-list">
-        <li ng-repeat="todo in todos track by $index">
-          <span>{{ todo }}</span>
-          <button class="bt bt-achieve" ng-click="done(todo)">Done</button>
-        </li>
-
-      </ul>
-  <ul class="add-todo">
-    <li>
-      <input type="text" class="txt" placeholder="New Todo"
-             ng-model="newTodo" ng-keyup="add($event)" />
-    </li>
-  </ul>
-   
-</div>  
-
-<img title="Camp Counselor" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUbVvHChUOUb6mbdWZK244hGrblPDyvIbU2wA8KDjetlTD5c7frg" alt="keep calm and be a camp counselor">
-
-<a target="_blank" href="http://google.com">Google</a> 
-
- </div>
- 
+</div>
  
  <script src="/scripts.js"> </script>
  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
