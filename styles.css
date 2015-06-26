@@ -1,6 +1,15 @@
+article.tabs
+{
+	position: relative;
+	display: block;
+	width: 40em;
+	height: 15em;
+	margin: 2em auto;
+}
 body{
 	overflow-x:hidden;
 	}
+
 	
 img{
 	max-width:100%;
